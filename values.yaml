@@ -2,9 +2,9 @@ replicaCount: 1
 
 image:
   repository: egerin/kube
-  tag: 1707856100
+  tag: "1707856100"
 
 service:
   type: ClusterIP
   ports:
-    http: 80
+    http: 801707856100
