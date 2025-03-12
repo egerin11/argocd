@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: egerin/kube
-  tag: latest
+  tag: 1707856100
 
 service:
   type: ClusterIP
