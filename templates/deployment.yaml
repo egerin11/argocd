@@ -55,24 +55,4 @@ spec:
           secret:
             secretName: nginx-config
 ---
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: {{.Release.Name}}-apache
-  labels:
-    app: apache
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: apache
-  template:
-    metadata:
-      labels:
-        app: apache
-    spec:
-      containers:
-        - name: apache
-          image: egerin/apache80_test:2.1.46
-          ports:
-            - containerPort: 8080
+
