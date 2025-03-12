@@ -9,7 +9,7 @@ spec:
     - name: http
       port: {{ .Values.service.ports.http }}
       targetPort: {{ .Values.service.ports.http }}
-  type: { { .Values.service.type } }
+  type: {{ .Values.service.type }}
 ---
 apiVersion: v1
 kind: Service
